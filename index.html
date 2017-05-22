@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rijks Museum</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,400i,600,600i,700,700i" rel="stylesheet">
+  </head>
+  <body ng-app="rijksModule" ng-controller="rijksController">
+      <!-- <reddit-post ng-repeat="post in posts"></reddit-post> -->
+
+        <div class="titleContainer">
+          <h1>RIJKS MUSEUM</h1>
+        </div>
+          <div class="submitInfo">
+        <input type="text" ng-model="category">
+        <button type="submit" name="button" ng-click="retrieveInfo(category)">Submit</button>
+        </div>
+        <main>
+
+      <div id="display" ng-repeat= 'post in posts'>
+        <img ng-src="{{post.webImage.url}}" id="rijksImages">
+        <h4> {{post.longTitle}} </h4>
+        <a href="{{post.links.web}}" target="_blank">More Information</a>
+        <h4> Object Number: {{post.objectNumber}} </h4>
+        <!-- <h4> {{post.principalOrFirstMaker}}</h4> -->
+
+      </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.min.js"></script>
+    <script src="angularFiles/controller.js"></script>
+    <!-- <script src="factory.js"></script> -->
+  </body>
+</html>

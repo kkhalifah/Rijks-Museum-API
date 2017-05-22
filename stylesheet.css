@@ -1,0 +1,49 @@
+@font-face {
+  font-family: asimov;
+  src: url(asimovFont/Asimov.otf);
+}
+
+@font-face {
+  font-family: asimovXwidit;
+  src: url(asimovFont/AsimovXWidIt.otf);
+}
+
+@font-face {
+  font-family: asimovNar;
+  src: url(asimovFont/AsimovNar.otf);
+}
+
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 72px;
+  color: white;
+}
+
+.titleContainer {
+  background-color: teal;
+  width:1200px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+main {
+width: 90%;
+margin: 0 auto;
+
+}
+
+#display {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+#rijksImages {
+  width: 200px;
+  margin: 0 auto;
+}
+
+h4 {
+  text-align: center;
+}
