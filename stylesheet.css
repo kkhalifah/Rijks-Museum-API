@@ -10,7 +10,11 @@
   font-family: asimovNar;
   src: url(asimovFont/AsimovNar.otf);
 }
-
+body  {
+    background-image: url("canvas.jpg");
+    background-color: #cccccc;
+    width: 100%;
+}
 h1{
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
@@ -63,4 +67,5 @@ border-radius: 8px;
 input {
   border-radius: 8px;
   height: 25px;
+  padding-left: 10px;
 }
