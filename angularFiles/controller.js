@@ -1,5 +1,5 @@
 var app = angular.module('rijksModule', []);
-//add factr name
+
 app.controller('rijksController', function($scope, $http){
 //console.log("controller is connected!");
 
